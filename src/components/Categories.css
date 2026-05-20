@@ -1,0 +1,42 @@
+.categories-section {
+  padding: 3rem 0;
+  background-color: var(--color-white);
+  border-bottom: 1px solid var(--color-border);
+  margin-bottom: 2rem;
+}
+
+.categories-title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: var(--color-text);
+}
+
+.categories-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.category-btn {
+  padding: 0.8rem 1.5rem;
+  border: 1px solid var(--color-border);
+  border-radius: 30px;
+  font-size: 1rem;
+  color: var(--color-text);
+  background-color: transparent;
+  transition: all 0.3s ease;
+  text-transform: capitalize;
+}
+
+.category-btn:hover {
+  border-color: var(--color-accent);
+  color: var(--color-accent);
+}
+
+.category-btn.active {
+  background-color: var(--color-accent);
+  border-color: var(--color-accent);
+  color: var(--color-white);
+}
