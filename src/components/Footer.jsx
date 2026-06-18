@@ -1,7 +1,20 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
+import { Lock } from 'lucide-react';
 import './Footer.css';
 
 export const Footer = () => {
+  const [clickCount, setClickCount] = useState(0);
+  const navigate = useNavigate();
+
+  const handleAdminClick = () => {
+    const newCount = clickCount + 1;
+    setClickCount(newCount);
+    if (newCount >= 5) {
+      setClickCount(0);
+      navigate('/login');
+    }
+  };
   return (
     <footer className="footer">
       <div className="container-wide footer-content">
@@ -41,7 +54,10 @@ export const Footer = () => {
       </div>
       <div className="footer-bottom">
         <div className="container-wide">
-          <p>&copy; {new Date().getFullYear()} La Bianka. Todos los derechos reservados.</p>
+          <p onClick={handleAdminClick} style={{ cursor: 'pointer', userSelect: 'none' }}>
+            &copy; {new Date().getFullYear()} La Bianka. Todos los derechos reservados.
+            <Lock size={12} style={{ opacity: 0.1, marginLeft: '8px', verticalAlign: 'middle' }} />
+          </p>
         </div>
       </div>
     </footer>
