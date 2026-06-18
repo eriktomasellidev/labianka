@@ -37,17 +37,17 @@ export const Footer = () => {
         
         <div className="footer-section">
           <h4>Ubicación</h4>
-          <p>Av. Santa Fe 1234, CABA, Argentina</p>
+          <p>Córdoba, Argentina</p>
           <div className="map-container">
             <iframe 
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.1837424915664!2d-58.38927958423653!3d-34.59950798046039!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccac4985db6e1%3A0x6bba3c690bc02c81!2sAv.%20Sta.%20Fe%201234%2C%20C1059ABO%20Cdad.%20Aut%C3%B3noma%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1683050942504!5m2!1ses-419!2sar" 
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d109832.73432014483!2d-64.27441!3d-31.4201!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9432985f478f5b69%3A0xb0a24f9a5366b092!2sC%C3%B3rdoba%2C%20Argentina!5e0!3m2!1ses-419!2sar!4v1683050942504!5m2!1ses-419!2sar" 
               width="100%" 
               height="350" 
               style={{ border: 0 }} 
               allowFullScreen="" 
               loading="lazy" 
               referrerPolicy="no-referrer-when-downgrade"
-              title="Mapa de Ubicación La Bianka"
+              title="Mapa de Ubicación La Bianka - Córdoba"
             ></iframe>
           </div>
         </div>
